@@ -1,8 +1,8 @@
 server:
   port: 8080
 mysql:
-  database: springboot-multi-moudle
+  database: springboot-multi-module
   user: root
   password: 790461387
-  url: localhost
+  url: 47.112.114.47
   port: 3306

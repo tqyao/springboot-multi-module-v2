@@ -1,0 +1,20 @@
+#server:
+#  port: 8080
+spring:
+  profiles:
+    active: #spring.profiles.active#
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT +8
+  application:
+    name: multi-sample
+  datasource:
+    url: jdbc:mysql://${mysql.url}:${mysql.port}/${mysql.database}?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&useAffectedRows=true&serverTimezone=CTT
+    username: ${mysql.user}
+    password: ${mysql.password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#mybatis-plus:
+#  mapper-locations:
+#    - classpath:mapper/*.xml
+#    - classpath*:cn/**/dao/*.xml

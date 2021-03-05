@@ -2,7 +2,7 @@
 #  port: 8080
 spring:
   profiles:
-    active: #spring.profiles.active#
+    active: #profiles.active#
   jackson:
     date-format: yyyy-MM-dd
     time-zone: GMT +8
